@@ -9,6 +9,21 @@
 </head>
 
 <body>
+  <audio id="bgMusic" autoplay loop>
+    <source src="./song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // To ensure playback works after user interaction
+    document.addEventListener('click', function () {
+      const audio = document.getElementById('bgMusic');
+      if (audio.paused) {
+        audio.play();
+      }
+    });
+  </script>
+
   <div class="book">
     <div class="page">
       <div class="front cover"></div>
@@ -32,7 +47,9 @@
         <div style="width: 200px; height: 200px; margin-left: 60px">
           <img src="img/png.jpeg" alt="2" />
         </div>
-        <p style="text-align: center"><b>લેખક: અમિત વાળંદ</b></p>
+        <p style="text-align: center"><b>લેખક: અમિતકુમાર વાળંદ</b></p>
+        <p style="text-align: center"><b> <a href="https://www.instagram.com/amitvaland_14/"
+              style="text-decoration: none; color: rebeccapurple;" target="_blank">IG: @amitvaland_14</a> </b></p>
 
       </div>
       <div class="back">
